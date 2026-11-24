@@ -1,0 +1,144 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[slovene]{babel}
+\usepackage{lmodern}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{microtype}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue}
+\setlength{\parskip}{0.55em}
+\setlength{\parindent}{0pt}
+
+\title{Pregled obstoječih rešitev za spletno trgovino \textit{Pod Lipo}}
+\author{Lana Tratnik \\ Nino Kranjec Lončarič}
+\date{November 2026}
+
+\begin{document}
+\begin{titlepage}
+  \centering
+  \vspace*{2.5cm}
+  {\Large Projektna naloga\par}
+  \vspace{1.8cm}
+  {\huge\bfseries POD LIPO\par}
+  \vspace{0.5cm}
+  {\Large Pregled obstoječih rešitev za spletno trgovino s čaji in zelišči\par}
+  \vspace{2.2cm}
+  {\large Avtorici:\par}
+  \vspace{0.3cm}
+  {\large Lana Tratnik\\ Nino Kranjec Lončarič\par}
+  \vfill
+  {\large November 2026\par}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{Uvod}
+Projekt \textit{Pod Lipo} je zasnova spletne trgovine, namenjene predstavitvi in prodaji čajev ter zelišč. Namen projekta je kupcem omogočiti pregledno spletno mesto, na katerem lahko spoznajo ponudbo, poiščejo izdelke in dobijo osnovne informacije, ki jim pomagajo pri izbiri. Pri načrtovanju je koristno pregledati že obstoječe spletne trgovine s podobno ponudbo. Tako lahko prepoznamo funkcionalnosti, ki so za kupce uporabne, ter področja, na katerih se lahko naša rešitev razlikuje.
+
+V nadaljevanju so predstavljene tri obstoječe spletne rešitve: Herbessa, Flora trgovina in Oaza Zelišč. Pregled temelji na javno dostopnih informacijah in vsebini njihovih spletnih strani \cite{herbessa,flora,oaza}. Prednosti in slabosti so ocenjene z vidika uporabnika, ki išče čaje oziroma zeliščne izdelke.
+
+\section{Pregled obstoječih rešitev}
+
+\subsection{Herbessa}
+\textbf{Spletna stran:} \url{https://herbessa.si/}
+
+\textbf{Opis.} Herbessa je slovenska zeliščna trgovina, ki predstavlja izdelke iz zelišč lastne pridelave. Njena ponudba vključuje zeliščne čaje in mešanice, začimbe, sirupe, naravne pripravke, izdelke za nego telesa ter darilne pakete. Na strani izpostavlja tudi način pridelave in priprave zelišč ter svojo zgodbo \cite{herbessa}.
+
+\textbf{Ključne funkcionalnosti in značilnosti:}
+\begin{itemize}[leftmargin=1.2cm]
+  \item pregled kategorij izdelkov, med katerimi so zeliščni čaji in čajne mešanice;
+  \item prikaz posameznih izdelkov s cenami in osnovnimi informacijami;
+  \item razvrščanje in filtriranje izdelkov v kategoriji čajev;
+  \item predstavitev izvora zelišč, postopka priprave in vrednot ponudnika;
+  \item informacije o dostavi, plačilu in pogojih poslovanja.
+\end{itemize}
+
+\textbf{Prednosti.} Spletna stran ponuja širok izbor izdelkov, čaje pa predstavlja v ločeni kategoriji. Uporabniku so na voljo filtri in možnosti razvrščanja, kar olajša pregled večjega števila izdelkov. Posebnost je poudarjanje lastne pridelave, ročnega dela in porekla zelišč, kar kupcu pomaga razumeti zgodbo ponudnika \cite{herbessa_caji}.
+
+\textbf{Slabosti oziroma možne priložnosti za izboljšavo.} Ker trgovina poleg čajev prodaja tudi več drugih skupin izdelkov, je ponudba obsežnejša od trgovine, ki bi bila osredotočena samo na čaje in zelišča. Pri projektu Pod Lipo lahko zato damo več poudarka hitremu iskanju čajev, jasnemu razvrščanju po vrstah in preprosti predstavitvi izdelkov. To je projektna usmeritev, ne trditev, da Herbessa teh možnosti nima.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.88\textwidth]{slike/herbessa.png}
+  \caption{Prostor za posnetek zaslona začetne strani Herbessa. Pred oddajo zamenjajte označeno sliko z dejanskim posnetkom spletne strani.}
+  \label{fig:herbessa}
+\end{figure}
+
+\subsection{Flora trgovina}
+\textbf{Spletna stran:} \url{https://www.flora-trgovina.si/}
+
+\textbf{Opis.} Flora trgovina je spletna trgovina, ki se posebej posveča čajem. Na svoji spletni strani navaja več kot 150 različnih zeliščnih čajev ter ponuja tudi sadne in prave čaje, filter čaje, čajne mešanice in personalizirane čaje. Poleg čajev prodaja tudi pripomočke in izdelke, povezane s pitjem čaja, na primer skodelice in žličke \cite{flora}.
+
+\textbf{Ključne funkcionalnosti in značilnosti:}
+\begin{itemize}[leftmargin=1.2cm]
+  \item razdelitev ponudbe v kategorije čajev;
+  \item prikaz izdelkov, cen in možnosti dodajanja v košarico;
+  \item ponudba personaliziranih čajev z možnostjo dodajanja sporočila;
+  \item predstavitev podjetja in njegove ponudbe;
+  \item objave z nasveti in vsebinami o čajih.
+\end{itemize}
+
+\textbf{Prednosti.} Glavna prednost je velika in raznolika izbira čajev. Posebej zanimiva je možnost personalizacije, saj lahko kupec izbere čaj in mu doda sporočilo. Trgovina ponuja tudi dodatke, zato lahko kupec na enem mestu najde čaj in pripomočke za pripravo \cite{flora}.
+
+\textbf{Slabosti oziroma možne priložnosti za izboljšavo.} Zaradi velikega števila izdelkov je pomembno, da je navigacija dovolj jasna in da kupec hitro najde želeni izdelek. Pod Lipo lahko izpostavi enostavnejšo strukturo kategorij ter pri vsakem čaju dosledno prikaže kratke in hitro primerljive informacije, kot so sestavine, okus in način priprave. Gre za načrtovano razlikovanje naše rešitve.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.88\textwidth]{slike/flora.png}
+  \caption{Prostor za posnetek zaslona spletne trgovine Flora. Pred oddajo zamenjajte označeno sliko z dejanskim posnetkom spletne strani.}
+  \label{fig:flora}
+\end{figure}
+
+\subsection{Oaza Zelišč}
+\textbf{Spletna stran:} \url{https://www.oaza-zelisc.si/caji}
+
+\textbf{Opis.} Oaza Zelišč je spletna trgovina, ki med drugim ponuja zeliščne čaje. Na strani s čaji poudarja skrbno izbrane rastline, ročno obdelavo, obiranje, sušenje in pripravo zelišč. Ponudnik navaja, da so zelišča pridelana v Sloveniji, v predalpskem okolju. Spletna trgovina ponuja tudi druge izdelke, kot so naravna kozmetika, aromaterapija, knjige in embalaža \cite{oaza}.
+
+\textbf{Ključne funkcionalnosti in značilnosti:}
+\begin{itemize}[leftmargin=1.2cm]
+  \item ločena predstavitev zeliščnih čajev;
+  \item opis načina pridelave in priprave zelišč;
+  \item spletna ponudba čajev in drugih naravnih izdelkov;
+  \item navedeni kontaktni podatki ponudnika;
+  \item informacije o možnostih plačila.
+\end{itemize}
+
+\textbf{Prednosti.} Stran daje velik poudarek izvoru zelišč in ročni pripravi, zato kupec dobi več informacij o nastanku izdelkov. Jasno je navedeno tudi, da gre za spletno trgovino, kar uporabniku pojasni način nakupovanja \cite{oaza}.
+
+\textbf{Slabosti oziroma možne priložnosti za izboljšavo.} V primerjavi z obsežnejšimi trgovinami je na pregledani strani manj izpostavljenih možnosti za filtriranje in razvrščanje čajev. Pod Lipo lahko zato ponudi sodobnejši in vizualno bolj pregleden prikaz izdelkov, jasnejše kategorije ter preprostejšo pot od izbire izdelka do košarice. Ocena se nanaša na pregledano javno stran.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.88\textwidth]{slike/oaza.png}
+  \caption{Prostor za posnetek zaslona strani zeliščnih čajev Oaza Zelišč. Pred oddajo zamenjajte označeno sliko z dejanskim posnetkom spletne strani.}
+  \label{fig:oaza}
+\end{figure}
+
+\section{Primerjava in zaključek}
+Pregledane rešitve kažejo, da so za spletno trgovino s čaji in zelišči pomembni predvsem pregledna razdelitev izdelkov, kakovostni opisi, prikaz cen, preprosto naročanje in informacije o izvoru izdelkov. Herbessa izstopa po predstavitvi lastne pridelave in filtriranju čajev, Flora po široki izbiri ter možnosti personalizacije, Oaza Zelišč pa po poudarku na ročnem delu in poreklu zelišč \cite{herbessa,herbessa_caji,flora,oaza}.
+
+Pri projektu \textit{Pod Lipo} želiva prevzeti dobre prakse obstoječih rešitev: jasno razdelitev izdelkov v kategorije, kakovostne fotografije, razumljive opise, vidne cene in preprost postopek nakupa. Posebno pozornost bova namenili preglednosti in enostavni uporabi. Naša spletna trgovina bo usmerjena predvsem v čaje in zelišča, zato želiva, da obiskovalec brez nepotrebnega iskanja najde ustrezno kategorijo in informacije o izdelku. Kot možno razlikovalno prednost načrtujeva enoten, preprost prikaz podatkov o vsakem izdelku ter prijeten vizualni slog, povezan z imenom Pod Lipo.
+
+\section{Viri}
+\begin{thebibliography}{9}
+\bibitem{herbessa}
+Herbessa. \textit{Uradna spletna stran Herbessa}. Dostopno na: \url{https://herbessa.si/} (dostopano 24. 11. 2026).
+
+\bibitem{herbessa_caji}
+Herbessa. \textit{Zeliščni čaji in čajne mešanice}. Dostopno na: \url{https://herbessa.si/collections/zeliscni-caji} (dostopano 24. 11. 2026).
+
+\bibitem{flora}
+Flora trgovina. \textit{Uradna spletna trgovina Flora}. Dostopno na: \url{https://www.flora-trgovina.si/} (dostopano 24. 11. 2026).
+
+\bibitem{oaza}
+Oaza Zelišč. \textit{Zeliščni čaji}. Dostopno na: \url{https://www.oaza-zelisc.si/caji} (dostopano 24. 11. 2026).
+\end{thebibliography}
+
+\end{document}
